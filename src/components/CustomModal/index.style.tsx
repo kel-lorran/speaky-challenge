@@ -8,14 +8,13 @@ export const Wrapper = styled.div`
   bottom: 0;
   left: 0;
   ${(props: Partial<CustomModalProps>) =>
-        props.show ? 'display: flex;' : 'display: none;'}
+    props.show ? 'display: flex;' : 'display: none;'}
   justify-content: center;
   align-items: center;
   > div {
     background: #ffffff;
     box-shadow: 0px 0px 56px 2px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    padding: 28px 56px;
     position: relative;
     max-height: 97vh;
     overflow-y: auto;

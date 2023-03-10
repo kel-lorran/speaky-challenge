@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ContainerBase = styled.div`
-  max-width: 1334px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   width: calc(100% - 32px);

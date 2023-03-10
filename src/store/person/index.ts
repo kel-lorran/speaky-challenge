@@ -13,6 +13,7 @@ export interface Person {
     resume: string;
     parle: string[];
     apprend: string[];
+    gender: string;
 }
 
 export interface PersonState {
@@ -51,9 +52,12 @@ const personSlice = createSlice({
                     hasMore: !!newData.length
                 }
             }
+        },
+        setPesonList: (state, action) => {
+            state.personList = action.payload
         }
     },
 });
 
-export const { updatePersonList } = personSlice.actions
+export const { updatePersonList, setPesonList } = personSlice.actions
 export default personSlice.reducer;
